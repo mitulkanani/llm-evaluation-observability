@@ -1,0 +1,13 @@
+{
+  "provider": "mock",
+  "model": "gpt-4o-mini",
+  "prompt_template": "Answer the input below carefully and directly.\\n\\nInput: {input}",
+  "cases": [
+    {
+      "id": "refund-policy",
+      "input": "Can I get a refund for an annual plan within 14 days?",
+      "expected_contains": ["14 days", "refund"],
+      "mock_response": "Annual plans are eligible for a refund request within 14 days of purchase."
+    }
+  ]
+}
